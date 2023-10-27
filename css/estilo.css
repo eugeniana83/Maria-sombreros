@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+@font-face {
+    font-family: "grueso";
+    src: url(../fonts/Dosis-SemiBold.ttf);
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px;
+}
+.logo{
+    width: 300px;      
+}
+.menu{
+   font-family: "grueso";
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    grid-gap: 100px;            
+}
+.navbar{
+    display: flex;
+    align-items: center;
+   
+
+}
+.imagenprincipal{
+    background-image: url(../img/piluso.jpeg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenprincipal h1{
+    font-family: "grueso";
+}
+
+.pie h4,h5{
+    font-family: "grueso";
+    display: flex;
+    
+}
+.productos {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid: template columns 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "viscera  sombrero"
+    "bag      piluso";
+    padding: 50px;
+    
+}
+.viscera {
+    font-family: "grueso";
+    grid-area: viscera; 
+    background-image: url(../img/viscera.jpeg); 
+    
+
+}
+.sombrero {
+    font-family: "grueso";
+    grid-area: sombrero; 
+    background-image: url(../img/WhatsApp\ Image\ 2023-09-12\ at\ 10.32.09\ \(1\).jpeg);   
+
+}
+.bag {
+    font-family: "grueso";
+    grid-area: bag;
+    background-image: url(../img/cartera.jpeg);
+    
+}
+.piluso {
+    font-family: "grueso";
+    grid-area: piluso;
+    background-image: url(../img/piluso.jpeg);
+
+}
+.productos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 400px) {
+    .productos {    
+    
+    grid: template columns 1fr;
+    grid-template-rows: repeat(6,1 fr);
+    grid-template-areas: 
+    "viscera"
+    "sombrero"
+    "bag"
+    " piluso";
+    
+    }
+    .body {
+        background-color: darksalmon;
+    }
+
+    }
+    .container{
+        
+        
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
