@@ -12,6 +12,9 @@ header {
     display: flex;
     gap: 10px;
     grid-gap: 10px;
+    justify-content: space-around;
+    padding: 60px;
+    
 }
 .logo{
     width: 300px;      
@@ -27,17 +30,17 @@ header {
     display: flex;
     align-items: center;
    
-
 }
 .imagenprincipal{
     background-image: url(../img/piluso.jpeg);
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;  
 }
 .imagenprincipal h1{
     font-family: "grueso";
@@ -49,8 +52,9 @@ header {
     
 }
 .productos {
+   
     display: grid;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     grid: template columns 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -58,12 +62,17 @@ header {
     "viscera  sombrero"
     "bag      piluso";
     padding: 50px;
+    gap: 50px;
+    
+    
+    
     
 }
 .viscera {
     font-family: "grueso";
     grid-area: viscera; 
     background-image: url(../img/viscera.jpeg); 
+    
     
 
 }
@@ -93,8 +102,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 40px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .productos {    
     
     grid: template columns 1fr;
@@ -105,20 +115,18 @@ header {
     "bag"
     " piluso";
     
+    
     }
-    .body {
+    .body{
+        justify-content: center;
         background-color: darksalmon;
+        grid: template columns 1fr;
+    grid-template-rows: repeat(6,1 fr);
+    grid-template-areas: 
+    "imagenprincipal"
+    "video"
+
+        
     }
 
-    }
-    .container{
-        
-        
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-         display: flex;
-        justify-content: center;
-        align-items: center;
     }

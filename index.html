@@ -6,42 +6,38 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/piluso.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css">git
 </head>
-<body>
-    <header class="header">
-        <img class="logo" src="/img/logo.jpeg" alt="logo">     
-
-        
-        <nav class="navbar">
-            <h2>
-              <ul class="menu">
-                <li class="menu__item">
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/tienda.html">Tienda</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/quienessomos.html">Quienes somos</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/locales.html"> Locales</a>
-                </li>
-              </ul>
-            </h2>
-        </nav>
-    
+<body class="body">
+    <header class="header">       
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img/logo.jpeg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                  <a class="nav-link" href="./pages/tienda.html">TIENDA</a>
+                  <a class="nav-link" href="./pages/quienessomos.html">QUIENES SOMOS</a>
+                  <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                  <a class="nav-link" href="./pages/locales.html">LOCALES</a>
+                 
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="conteiner">
-      <section class="imagenprincipal">
+    <main>
+        <div class="container">
+        <div class="imagenprincipal">
+      
              <h1> Tienda de Sombreros y accesorios</h1>
-      </section>
-       
 
+        </div class= "video">
+        <video width="900px" height="900px" controls autoplay loop> <source src="./video/WhatsApp Video 2023-11-02 at 18.04.51.mp4" tipe="video/mp4"></video>
+        </div>
     </main>
     <footer class="pie">
         <hr>
@@ -51,15 +47,7 @@
                 <input type="submit">
             </form>
         </h4>
-        <h5>
-            <strong>
-            <a href ="./index.html"> INICIO </a> 
-            <a href="./pages/tienda.html"> TIENDA </a>
-            <a href="./pages/quienessomos.html">QUIENES SOMOS</a>    
-            <a href="./pages/locales.html"> LOCALES</a>
-            <a href="./pages/contacto.html"> CONTACTO</a>
-            </strong> 
-          </h5>
+        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
